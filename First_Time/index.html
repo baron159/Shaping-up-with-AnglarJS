@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<html ng-app="store">
+    <head>
+        <title>First Time Angular</title>
+        
+        <link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
+        
+        <script type="text/javascript" src="angular.min.js"></script>
+        <script type="text/javascript" src="modu.js"></script>
+    </head>
+    
+    <body ng-controller="StoreController as store">
+        <div ng-repeat="product in store.products" ng-hide="product.soldOut">
+            <h2>{{product.name}}</h2>
+            <h3>${{product.price}}</h3>
+            <p>{{product.description}}</p>
+            <button ng-show="store.product.canPurchase">Add to Cart</button>
+        </div>
+    </body>
+
+</html>
