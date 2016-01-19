@@ -18,7 +18,7 @@
     app.directive("productPanels", function(){
        return{
            restrict: 'E',
-           templateUrl:'temp/product-panels.html',
+           templateUrl:'product-panels.html',
            controller: function(){
                 //Var for storing the currently selected tab
                 this.tab = 1;
